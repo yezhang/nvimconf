@@ -4,10 +4,16 @@
 local keymap = vim.keymap
 keymap.set("i", "jk", "<Esc>")
 
--- 回复上一次的搜索结果
 keymap.set(
   "n",
   "<leader>sx",
   require("telescope.builtin").resume,
   { noremap = true, silent = true, desc = "resume last telescope session" }
+)
+
+keymap.set(
+  "n",
+  "<leader>fg",
+  ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
+  { noremap = true, silent = true, desc = "Live Grep(Args)" }
 )
