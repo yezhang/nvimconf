@@ -15,5 +15,5 @@ keymap.set(
   "n",
   "<leader>fg",
   ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
-  { noremap = true, silent = true, desc = "Live Grep(Args)" }
+  { noremap = true, silent = true, desc = "Live Grep (Args)" }
 )
