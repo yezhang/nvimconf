@@ -6,13 +6,6 @@ keymap.set("i", "jk", "<Esc>")
 
 keymap.set(
   "n",
-  "<leader>sx",
-  require("telescope.builtin").resume,
-  { noremap = true, silent = true, desc = "resume last telescope session" }
-)
-
-keymap.set(
-  "n",
   "<leader>fg",
   ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
   { noremap = true, silent = true, desc = "Live Grep (Args)" }
