@@ -10,3 +10,5 @@ keymap.set(
   ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
   { noremap = true, silent = true, desc = "Live Grep (Args)" }
 )
+
+keymap.set("n", "<C-p>", ":Legendary<CR>", { noremap = true, silent = true, desc = "Command Palette" })
