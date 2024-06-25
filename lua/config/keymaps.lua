@@ -6,7 +6,7 @@ keymap.set("i", "jk", "<Esc>")
 
 keymap.set(
   "n",
-  "<leader>fg",
+  "<leader>fp",
   ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
   { noremap = true, silent = true, desc = "Live Grep (Args)" }
 )
