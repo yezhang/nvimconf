@@ -4,3 +4,5 @@
 local opt = vim.opt
 -- opt.relativenumber = false
 opt.winbar = "%=%m %f %r"
+-- markdown 文件的中文总有下划线，cjk 排除了 East Asia 字符检查
+opt.spelllang = { "en", "cjk" }
