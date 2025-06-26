@@ -1,6 +1,7 @@
 return {
   {
     "yetone/avante.nvim",
+    enabled = false,
     event = "VeryLazy",
     lazy = false,
     version = false, -- set this if you want to always pull the latest change
@@ -11,7 +12,7 @@ return {
           __inherited_from = "openai",
           api_key_name = "DEEPSEEK_API_KEY",
           endpoint = "https://api.deepseek.com",
-          model = "deepseek-coder",
+          model = "deepseek-chat",
         },
       },
     },
@@ -25,7 +26,6 @@ return {
       "MunifTanjim/nui.nvim",
       --- The below dependencies are optional,
       "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
-      "zbirenbaum/copilot.lua", -- for providers='copilot'
       {
         -- support for image pasting
         "HakonHarnes/img-clip.nvim",
